@@ -1,0 +1,77 @@
+<!-- 
+    Created by Rohan Pun, C0908478 on 29th May, 2024.
+-->
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title of the Web page -->
+    <title>Currency Converter</title>
+    
+    <!-- Link for the external stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- This is the Heading section -->
+<div class="heading">
+    <!-- Main title of the webpage -->
+    <h1>US Dollar to Canadian Dollar</h1><br>
+    <h2>Convert USD to CAD at the real exchange rate</h2>
+</div>
+
+<!-- Converter section -->
+<div class="converter">
+    <!-- Conversion form -->
+    <form>
+        <!-- Section for input -->
+        <div class="Section1">
+            <!-- Label for amount input -->
+            <label for="Amount">Amount</label>
+            <!-- Input field for amount -->
+            <input type="number" id="number" name="number" min="1" max="10000000">
+            <!-- Subsection for flag and currency selection -->
+            <div class="section1-1">
+                <!-- Flag for USA -->
+                <img src="https://flagcdn.com/48x36/us.png" alt="flag">
+                <!-- Dropdown for currency selection (USA) -->
+                <select name="country-usa" id="country-usa">
+                    <option value="USD">USD</option>
+                </select>
+            </div>
+        </div>
+       
+        <i class="fas fa-exchange-alt" alt="arrow"></i>
+        <!-- Section for converted amount -->
+        <div class="Section2">
+            <!-- Label for the converted amount -->
+            <label for="Converted_to">Converted to</label>
+            <!-- Input field for converted amount -->
+            <input type="number" id="number1" name="number1">
+            <!-- Subsection for flag and currency selection -->
+            <div class="section2-1">
+                <!-- Flag of Canada -->
+                <img src="https://flagcdn.com/48x36/ca.png" alt="flag">
+                <!-- Dropdown for the currency selection (Canada) -->
+                <select name="country-canada" id="country-canada">
+                    <option value="CAD">CAD</option>
+                </select>
+            </div>
+        </div>
+        <!-- Convert button -->
+        <div class="ovalbutton">
+            <button type="button" id="convertBtn">Convert</button>
+        </div>
+    </form>
+</div>
+
+<!-- Display the current time -->
+<p id="time"></p>
+
+<!-- Link for the JS file -->
+<script src="index.js"></script>
+</body>
+</html>
